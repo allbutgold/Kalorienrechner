@@ -5,12 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
+    <section>
+        <article>
+            <form onsubmit="return false">
+                <input type="number" name="size" id="size">
+                <label for="size">Körpergröße</label><br>
     
+                <input type="number" name="age" id="age">
+                <label for="age">Alter</label><br>
+    
+                <input type="number" name="weight" id="weight">
+                <label for="weight">Gewicht</label><br>
+    
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Männlich</label><br>
+                
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Weiblich</label><br>
+            </form>
+        </article>
+        
+        <article>
+            <select name="activity" id="activity" class="select">
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+            </select>
+            <button onclick="kalories()" type="submit" id="submit" value="Submit">Submit</button>
+        </article>
+
+        <article>
+            <p id="grundUmsatz">Grund Umsatz</p>
+            <p id="gesamtUmsatz">Gesamt Umsatz</p>
+        </article>
+
+    </section>
 
 
+
+    
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
